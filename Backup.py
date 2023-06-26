@@ -85,9 +85,9 @@ def criar_xml(hostname,diretorio_atual,sid):
     author = ET.SubElement(registration_info, "Author")
     author.text = f"{hostname}"
     description = ET.SubElement(registration_info, "Description")
-    description.text = ""
+    description.text = "Descrição"
     uri = ET.SubElement(registration_info, "URI")
-    uri.text = ""
+    uri.text = "\\Nome"
     triggers = ET.SubElement(root, "Triggers")
     calendar_trigger = ET.SubElement(triggers, "CalendarTrigger")
     start_boundary = ET.SubElement(calendar_trigger, "StartBoundary")
